@@ -600,3 +600,14 @@
 - 限制：不是律師審過的文件；要更有保障，建議請律師過目，並在寄連結的 email 裡請對方回覆同意
 - 狀態：已 commit、已推送
 - 追記：推上後 CI 的離線測試有 1 個 Task1 測試失敗（`test_runs_do_not_share_hermes_state`）。原因：Linux runner 沒設 TMPDIR，Hermes 會把暫存改到 HERMES_HOME 底下。CI 補上 `TMPDIR` 後，4 個 job 全部通過（含 Windows 一鍵啟動）
+
+**T2-50 Task1、Task2 拆成兩個 repo**
+- 日期：2026-11-17
+- 你的問題：Task1、Task2 被一起推上去了，要分開；GitHub 首頁的 README 變得又長又雜
+- 原因：推的是整個開發資料夾，GitHub 首頁顯示的是根目錄那份規格包 README，Task2 的 README 被埋在子資料夾
+- 決定：建私人 repo `blacktea3250106/seo-task2`，只放 Task2 必要檔案，用全新歷史；Task2 README 放根目錄當首頁
+  - Task2 會用到的 5 個 Task1 模型連線、網路防護檔複製進來；CLI 拿掉 Task1 指令；設定檔精簡到只剩 Task2 用的欄位
+  - 驗證：測試 61 passed；拓撲圖和實跑時相同；CI 4 個 job 全部通過（Windows、macOS、Linux 一鍵啟動）
+  - 你看過 README：「我要的就是這種版本」
+- 待辦：舊的 `seo-harness-agent` 要刪，需要你授權 delete_repo 權限；Task1 repo 等 v3 Session 收尾後再拆
+- 狀態：seo-task2 已推送
