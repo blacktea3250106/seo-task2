@@ -1,0 +1,12 @@
+{
+  "models": {
+    "product_model_id": null
+  },
+  "budget": {
+    "external_calls_enabled": false,
+    "external_budget_usd": 0
+  },
+  "runtime": {
+    "t2_max_drafts": 4
+  }
+}

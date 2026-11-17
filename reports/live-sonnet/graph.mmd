@@ -1,0 +1,23 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	start(start)
+	planning(planning)
+	audit(audit)
+	decision(decision)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> start;
+	audit --> decision;
+	decision -. &nbsp;pass 或其他終態&nbsp; .-> __end__;
+	decision -. &nbsp;fail 帶修訂建議退回&nbsp; .-> planning;
+	planning -. &nbsp;Planner 失敗或超出預算&nbsp; .-> __end__;
+	planning -. &nbsp;草稿完成送審&nbsp; .-> audit;
+	start --> planning;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
+

@@ -1,0 +1,166 @@
+PROPRIETARY LICENSE — EVALUATION USE ONLY
+專有授權條款 — 僅限評估使用
+
+Copyright (c) 2026 Freddy (GitHub: blacktea3250106). All rights reserved.
+著作權所有 (c) 2026 Freddy（GitHub：blacktea3250106）。保留一切權利。
+
+The Chinese and English versions below have the same effect. If they conflict,
+the Traditional Chinese version prevails.
+以下中英文版本具同等效力；如有歧異，以繁體中文版本為準。
+
+==============================================================================
+繁體中文版
+==============================================================================
+
+第 1 條　定義
+1. 「本作品」：本儲存庫內之全部原始碼、文件、提示詞（prompt）、測試、設定檔、
+   簡報、資料、實跑紀錄及其他內容，包含其任何部分、修改版本及衍生作品。
+2. 「著作權人」：Freddy（GitHub 帳號 blacktea3250106）。
+3. 「被授權人」：經著作權人邀請或同意而取得本作品存取權限之個人或組織，
+   包含其員工、受僱人、受託人及代理人。
+4. 「評估目的」：被授權人為判斷是否錄用著作權人，就本作品進行之閱讀、下載、
+   複製至本機、編譯、執行、測試及內部討論。
+
+第 2 條　有限授權
+著作權人授予被授權人非專屬、不可轉讓、不可再授權、可隨時撤回之有限授權，
+僅得於評估目的之必要範圍內使用本作品。除本條明示授予者外，著作權人保留一切權利，
+本條款不構成任何明示或默示之其他授權。
+
+第 3 條　禁止行為
+未經著作權人事前書面同意，被授權人不得：
+1. 將本作品之全部或一部用於評估目的以外之任何用途，包含商業、營利、內部營運、
+   產品開發或服務提供；
+2. 將本作品之全部或一部整合、移植、改寫或引用至任何產品、服務、系統或程式碼庫；
+3. 依據本作品之架構、流程、提示詞、規則設計或其他內容，製作功能實質相同之衍生作品；
+4. 向評估目的所需人員以外之第三人散布、公開、轉授權、出租、出借或提供本作品；
+5. 將本作品之全部或一部用於訓練、微調或評估任何人工智慧或機器學習模型；
+6. 移除、遮蔽或變更本作品中之著作權標示或本授權條款。
+
+第 4 條　期間與終止
+1. 本授權自被授權人取得存取權限時生效，於下列情形之一最早發生時自動終止：
+   (1) 評估程序結束；
+   (2) 自取得存取權限之日起 90 日屆滿；
+   (3) 著作權人以書面（含電子郵件）通知撤回；
+   (4) 被授權人違反本條款任一規定。
+2. 授權終止後，被授權人應立即刪除並停止使用本作品之全部複本（含備份），
+   並於著作權人要求時以書面確認已刪除。
+
+第 5 條　保密
+被授權人應以不低於保護自身機密資訊之注意程度，對本作品保密，
+且僅得提供予因評估目的而有知悉必要之人員，並確保該等人員遵守本條款。
+
+第 6 條　不構成權利移轉
+被授權人取得、閱讀或測試本作品，不移轉本作品之任何著作權、專利權、營業秘密
+或其他智慧財產權，亦不構成任何受僱、委任或承攬關係所生之權利歸屬。
+
+第 7 條　第三方元件
+本作品所使用或於執行時下載之第三方軟體與套件（例如 Hermes Agent、LangGraph 及
+其他相依套件），各依其原有授權條款辦理，不受本條款拘束；本條款僅適用於著作權人
+之原創內容。
+
+第 8 條　免責聲明
+本作品係依「現狀」提供，不附任何明示或默示之擔保，包含但不限於適售性、
+特定目的適用性及不侵權之擔保。本作品所含之合規規則為示範用途，不構成法律意見，
+亦不保證符合任何法令。於法律允許之最大範圍內，著作權人對因使用本作品所生之
+任何損害不負賠償責任。
+
+第 9 條　違約責任
+被授權人違反本條款時，著作權人得依中華民國著作權法、營業秘密法、民法及其他
+相關法令請求排除侵害、防止侵害、損害賠償及其他救濟，並得請求被授權人負擔
+因此支出之合理費用。
+
+第 10 條　準據法與管轄
+本條款以中華民國（臺灣）法律為準據法。因本條款所生之爭議，雙方同意以
+臺灣臺北地方法院為第一審管轄法院。
+
+第 11 條　同意
+被授權人存取、下載、複製、執行或以其他方式使用本作品，即視為已閱讀、
+理解並同意本條款之全部內容。如不同意，請勿使用本作品，並立即刪除所有複本。
+
+第 12 條　聯絡
+如需評估目的以外之授權，請透過 GitHub（blacktea3250106）聯繫著作權人，
+並取得書面同意。
+
+==============================================================================
+English Version
+==============================================================================
+
+1. Definitions
+   (a) "Work" means all source code, documentation, prompts, tests,
+       configuration, slides, data, run records and other content in this
+       repository, including any part, modification or derivative of it.
+   (b) "Owner" means Freddy (GitHub: blacktea3250106).
+   (c) "Licensee" means any person or organization granted access to the Work
+       by invitation or consent of the Owner, including its employees,
+       contractors and agents.
+   (d) "Evaluation Purpose" means reading, downloading, cloning, building,
+       running, testing and internally discussing the Work solely to assess
+       the Owner as a job candidate.
+
+2. Limited License
+   The Owner grants Licensee a non-exclusive, non-transferable,
+   non-sublicensable, revocable license to use the Work solely as necessary
+   for the Evaluation Purpose. All rights not expressly granted are reserved.
+
+3. Restrictions
+   Without the Owner's prior written consent, Licensee shall not:
+   (a) use the Work, in whole or in part, for any purpose other than the
+       Evaluation Purpose, including commercial, internal business, product
+       development or service purposes;
+   (b) incorporate, port, adapt or reuse any part of the Work in any product,
+       service, system or codebase;
+   (c) create a derivative work that is substantially similar in function
+       based on the Work's architecture, flow, prompts, rule design or other
+       content;
+   (d) distribute, publish, sublicense, rent, lend or otherwise provide the
+       Work to any third party other than personnel needed for the Evaluation
+       Purpose;
+   (e) use the Work to train, fine-tune or evaluate any AI or machine learning
+       model;
+   (f) remove, obscure or alter any copyright notice or this license.
+
+4. Term and Termination
+   This license terminates automatically on the earliest of: (a) the end of
+   the evaluation process; (b) 90 days after access was first granted;
+   (c) written notice (including email) of revocation by the Owner; or
+   (d) any breach of these terms. Upon termination, Licensee shall promptly
+   delete all copies of the Work, including backups, and confirm deletion in
+   writing upon request.
+
+5. Confidentiality
+   Licensee shall keep the Work confidential with no less than the care it
+   uses for its own confidential information, and disclose it only to
+   personnel with a need to know for the Evaluation Purpose who are bound by
+   these terms.
+
+6. No Transfer of Rights
+   Access to, review or testing of the Work does not transfer any copyright,
+   patent, trade secret or other intellectual property right in the Work.
+
+7. Third-Party Components
+   Third-party software used or downloaded by the Work (such as Hermes Agent,
+   LangGraph and other dependencies) remains under its own license. These
+   terms apply only to the Owner's original content.
+
+8. Disclaimer
+   THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NON-INFRINGEMENT. The compliance rules in the Work are demonstrations only
+   and are not legal advice. To the maximum extent permitted by law, the Owner
+   shall not be liable for any damages arising from use of the Work.
+
+9. Remedies
+   Upon breach, the Owner may seek injunctive relief, damages and other
+   remedies under the Copyright Act, Trade Secrets Act, Civil Code and other
+   applicable laws of the Republic of China (Taiwan), and recover reasonable
+   costs incurred.
+
+10. Governing Law and Jurisdiction
+    These terms are governed by the laws of the Republic of China (Taiwan).
+    The Taiwan Taipei District Court shall have jurisdiction as the court of
+    first instance.
+
+11. Acceptance
+    By accessing, downloading, copying, running or otherwise using the Work,
+    Licensee agrees to these terms. If you do not agree, do not use the Work
+    and delete all copies immediately.

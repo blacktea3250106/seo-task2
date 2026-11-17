@@ -1,0 +1,51 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch pinned Hermes (sha256 verified)
+        run: python3 tools/fetch_hermes.py
+      - name: Install from lockfile
+        run: uv sync --python python3.12 --extra dev --extra anthropic --frozen
+      - name: Lint (ruff, config in pyproject.toml)
+        run: >
+          uvx ruff@0.8.6 check src tools tests
+      - name: Offline tests (no model calls, no paid services)
+        # Linux runner 沒設 TMPDIR 時，Hermes 會把暫存改到 HERMES_HOME/cache/scratch
+        env:
+          TMPDIR: ${{ runner.temp }}
+        run: .venv/bin/python -m pytest -q -rs
+      - name: Task2 smoke run
+        run: |
+          .venv/bin/seo-agent graph
+          .venv/bin/seo-agent collaborate --mode fixture --out "$RUNNER_TEMP/t2"
+          .venv/bin/seo-agent collaborate --mode fixture --force-policy always --out "$RUNNER_TEMP/t2-conflict"
+
+  # 從乾淨 runner 走使用者的一鍵啟動：不預裝 uv；runner 內建的 Python 不會被使用（uv 自己下載 3.12）
+  one-command-start:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start (macOS / Linux)
+        if: runner.os != 'Windows'
+        run: ./start_task2.sh --offline --test
+      - name: Start (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: .\start_task2.ps1 --offline --test
